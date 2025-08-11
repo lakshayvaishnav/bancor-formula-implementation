@@ -1,0 +1,65 @@
+# === Rust / Cargo ===
+# Ignore build artifacts
+/target/
+**/target/
+
+# Cargo's local config dir (if you use it)
+/.cargo/
+
+# Build/packaging output from wasm-pack
+/pkg/
+
+# Optional: compiled artifacts
+*.rlib
+*.rmeta
+*.so
+*.dylib
+*.dll
+*.exe
+
+# === Rust tooling / caches ===
+# incremental compilation folders (sometimes inside target)
+**/incremental/
+**/.fingerprint/
+
+# === Editor / IDE ===
+# VS Code
+.vscode/
+
+# JetBrains (CLion, IntelliJ, etc.)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Temp / backup files ===
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# === Node / frontend (if present in workspace) ===
+node_modules/
+
+# === Coverage & reports ===
+coverage/
+*.lcov
+
+# === Other common things you might want to ignore ===
+# Local env files
+.env
+.env.local
+
+# === Cargo.lock policy (choose one) ===
+# For libraries: it's common *not* to commit Cargo.lock (so ignore it).
+# For applications/binaries: it's recommended to commit Cargo.lock.
+# Uncomment the next line to ignore Cargo.lock (if you want that behavior):
+# Cargo.lock
