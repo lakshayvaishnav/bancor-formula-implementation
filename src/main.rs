@@ -1,6 +1,6 @@
 fn main() {
     let mut sol_reserve = 12_330_000_000u64;
-    let mut token_supply = 100_000_000u64;
+    let mut token_supply = 618_496_769u64;
 
     // purchase
     let tokens = calculate_purchase_return(20, sol_reserve, token_supply, 100_000_000);
